@@ -1,7 +1,9 @@
 <div class="index-list">
-  <ul>
-    <li v-for="holiday in holidayLists">
-      <div></div>
+  <ul class="holiday-items">
+    <li v-for="(holiday, index) in holidayLists" @click="selectTemplate(index)" class="holiday-item">
+      <div>
+        <img :src="holiday.img">
+      </div>
       <div>{{ holiday.text }}</div>
     </li>
   </ul>

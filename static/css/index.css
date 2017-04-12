@@ -1,5 +1,22 @@
 .index-list {
-  width: 300px;
-  height: 200px;
-  background: #000;
+  background: #EEE;
+  padding: 0.5rem 0.5rem;
+}
+.index-list .holiday-items .holiday-item{
+  margin: 0.5rem 0;
+  border-radius: 0.25rem;
+  background: #FFF;
+}
+.holiday-item div:nth-child(1) {
+  height: 8rem;
+  overflow: hidden;
+}
+.holiday-item div:nth-child(1) img {
+  width: 100%;
+}
+.holiday-item div:nth-child(2) {
+  height: 2rem;
+  line-height: 2rem;
+  padding-left: 1rem;
+  font-size: 0.7rem;
 }
