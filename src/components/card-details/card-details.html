@@ -1,0 +1,12 @@
+<div class="card-details">
+  <router-link to="/" class="nav"></router-link>
+  <div class="card-slogan">
+    {{ cardTemplates[holidayId].text }}
+  </div>
+  <div class="card-templates">
+    <p>选择贺卡模板</p>
+    <div class="cards">
+      <img v-for="(src, index) in cardTemplates[holidayId].thumbnails"  :src="src" @click="showCard(index)">
+    </div>
+  </div>
+</div>

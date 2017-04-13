@@ -3,7 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import '../static/css/reset.css'
+import '../static/css/index.css'
+import '../static/css/card-details.css'
+import '../static/css/show-card.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

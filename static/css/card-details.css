@@ -1,0 +1,37 @@
+.card-details {
+  position: relative;
+}
+.nav {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: url("../imgs/backwards-icon.png") no-repeat;
+  background-size: 100%;
+}
+.card-details .card-slogan {
+  padding: 2rem 4rem;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  text-indent: 2em;
+  border-bottom: 1px solid #ddd;
+}
+.card-details .card-templates {
+  padding: 0.5rem;
+}
+.card-details .card-templates p {
+  background: url("../imgs/line.png") no-repeat;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+}
+.card-details .card-templates .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-details .card-templates .cards img {
+  width: 8.5rem;
+  height: 15rem;
+  margin-top: 0.5rem;
+}

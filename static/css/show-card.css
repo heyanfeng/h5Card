@@ -1,0 +1,48 @@
+.show-card {
+  position: relative;
+}
+.show-card .foot-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.show-card .foot-options {
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.foot-options .icon-wrap {
+  text-align: center;
+}
+.foot-options .option-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.1rem solid #eee;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+}
+.foot-options .font {
+  background-image: url("../imgs/font-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+}
+.foot-options .picture {
+  background-image: url("../imgs/pic-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+}
+.foot-options .share {
+  background-image: url("../imgs/share-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+}
+.foot-options .option-text {
+  font-size: 0.7rem;
+  color: #fff;
+  margin-top: 0.1rem;
+}

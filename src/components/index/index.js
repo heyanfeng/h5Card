@@ -1,5 +1,3 @@
-import '../../../static/css/reset.css'
-import '../../../static/css/index.css'
 export default {
   name: 'index',
   data () {
@@ -30,8 +28,8 @@ export default {
           text: '感恩节贺卡'
         },
         {
-          img: '../../../static/imgs/index-bg-nationalDay.jpg',
-          text: '国庆节贺卡'
+          img: '../../../static/imgs/index-bg-love.jpg',
+          text: '情人节贺卡'
         },
         {
           img: '../../../static/imgs/index-bg-midAutumn.jpg',
@@ -45,7 +43,7 @@ export default {
       this.$router.push({
         path: 'cardDetails',
         query: {
-          cardId: index
+          holidayId: index
         }
       })
     }
