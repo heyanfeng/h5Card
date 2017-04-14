@@ -1,6 +1,7 @@
 <div class="show-card">
   <router-link :to="backPath" class="nav"></router-link>
-  <card></card>
+  <card00 v-if="cardsToggle[0][0]"></card00>
+  <card01 v-if="cardsToggle[0][1]"></card01>
   <div class="foot-wrap">
     <div class="foot-options">
       <div class="icon-wrap">

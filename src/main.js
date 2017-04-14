@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'animate.css'
 import '../static/css/reset.css'
 import '../static/css/index.css'
 import '../static/css/card-details.css'

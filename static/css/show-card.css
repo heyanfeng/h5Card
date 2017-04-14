@@ -1,10 +1,12 @@
 .show-card {
   position: relative;
+  overflow: hidden;
 }
 .show-card .foot-wrap {
   position: absolute;
   bottom: 0;
   width: 100%;
+  z-index: 1000;
 }
 .show-card .foot-options {
   padding: 0.5rem 0.5rem;

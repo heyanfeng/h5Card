@@ -1,21 +1,27 @@
 import card00 from './cards/01/01.vue'
+import card01 from './cards/02/02.vue'
 export default {
   data () {
     return {
       holidayId: this.$route.query.holidayId,
       cardId: this.$route.query.cardId,
-      arr: [[card00]]
+      cardsToggle: [
+        [false]
+      ]
     }
   },
   components: {
-    card: card00
+    card00,
+    card01
   },
   computed: {
     backPath () {
       return `cardDetails?holidayId=${this.holidayId}`
     },
     currentCard () {
-      return this.arr[parseInt(this.holidayId)][parseInt(this.cardId)]
     }
+  },
+  created () {
+    this.cardsToggle[parseInt(this.holidayId)][parseInt(this.cardId)] = true
   }
 }
