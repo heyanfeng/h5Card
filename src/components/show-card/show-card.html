@@ -1,16 +1,28 @@
 <div class="show-card">
+  <mt-popup v-model="popupVisible" class="popup-textarea" position="top"> 
+    <mt-field v-model="currentGreet"  type="textarea" rows="4"></mt-field>
+  </mt-popup>
   <router-link :to="backPath" class="nav"></router-link>
-  <card00 v-if="cardsToggle[0][0]"></card00>
-  <card01 v-if="cardsToggle[0][1]"></card01>
+  <a :class="className" @click="control" class="card-audio">
+    <audio autoplay="autoplay" loop="loop">
+      <source :src="currentMusicUrl">
+    </audio>
+  </a>
+  <card00 v-if="cardsToggle[0][0]" :greet="currentGreet"></card00>
+  <card01 v-if="cardsToggle[0][1]" :greet="currentGreet"></card01>
   <div class="foot-wrap">
     <div class="foot-options">
-      <div class="icon-wrap">
+      <div class="icon-wrap" @click="modiText">
         <p class="option-icon font"></p>
         <p class="option-text">改文字</p>
       </div>
       <div class="icon-wrap">
         <p class="option-icon picture"></p>
         <p class="option-text">换图片</p>
+      </div>
+      <div class="icon-wrap" @click="changeMusic">
+        <p class="option-icon music"></p>
+        <p class="option-text">换音乐</p>
       </div>
       <div class="icon-wrap">
         <p class="option-icon share"></p>

@@ -1,6 +1,11 @@
 <template>
   <div class="card-02"></div>
 </template>
+<script>
+  export default {
+    props: ['greet']
+  }
+</script>
 <style scoped>
   .card-02 {
     width: 18.75rem;

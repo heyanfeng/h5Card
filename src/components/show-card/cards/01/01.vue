@@ -4,7 +4,7 @@
     <img class="shuzhi animated rotateInUpRight" src="./imgs/shuzhi.png">
     <img class="fontImg animated flip" src="./imgs/fontImg.png">
     <img class="circle" src="./imgs/circle.png">
-    <div class="words animated fadeInUp" v-text="greetings">
+    <div class="words animated fadeInUp" v-text="greet">
     </div>
     <div class="shuimo">
       <img class="shuimo1 animated fadeInUp" src="./imgs/shuimo1.png">

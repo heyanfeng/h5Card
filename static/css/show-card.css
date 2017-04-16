@@ -2,6 +2,9 @@
   position: relative;
   overflow: hidden;
 }
+.show-card .popup-textarea {
+  width: 100%;
+}
 .show-card .foot-wrap {
   position: absolute;
   bottom: 0;
@@ -18,8 +21,8 @@
   text-align: center;
 }
 .foot-options .option-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   border: 0.1rem solid #eee;
   background-color: rgba(0, 0, 0, 0.8);
@@ -37,6 +40,12 @@
   background-position: center center;
   background-size: 60%;
 }
+.foot-options .music {
+  background-image: url("../imgs/music-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+}
 .foot-options .share {
   background-image: url("../imgs/share-icon.png");
   background-repeat: no-repeat;
@@ -48,3 +57,23 @@
   color: #fff;
   margin-top: 0.1rem;
 }
+.card-audio {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: inline-block;
+    z-index: 10;
+    background:url(../imgs/music.png) no-repeat;
+  }
+  a.play {
+    animation:rotate 1s linear infinite;
+  }
+  @keyframes rotate {
+    from {
+      transform:rotate(0deg);
+    } to {
+      transform:rotate(360deg);
+    }
+  }
