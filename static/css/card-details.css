@@ -7,7 +7,7 @@
   position: fixed;
   top: 0.5rem;
   left: 0.5rem;
-  z-index: 10000;
+  z-index: 1000;
   background: url("../imgs/backwards-icon.png") no-repeat;
   background-size: 100%;
 }

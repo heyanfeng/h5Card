@@ -4,6 +4,7 @@
     <img class="shuzhi animated rotateInUpRight" src="./imgs/shuzhi.png">
     <img class="fontImg animated flip" src="./imgs/fontImg.png">
     <img class="circle" src="./imgs/circle.png">
+    <img src="./imgs/bg.jpg" class="bg">
     <div class="words animated fadeInUp" v-text="greet">
     </div>
     <div class="shuimo">
@@ -21,8 +22,11 @@
   .card-01 {
     width: 100%;
     height: 33.35rem;
-    background: url("./imgs/bg.jpg");
-    background-size: 100%;
+  }
+  .bg {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
   .denglong {
     width: 5rem;

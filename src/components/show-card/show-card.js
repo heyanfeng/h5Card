@@ -1,10 +1,11 @@
 import card00 from './cards/01/01.vue'
 import card01 from './cards/02/02.vue'
-import {Popup, Field} from 'mint-ui'
+import {Popup, Field, Button} from 'mint-ui'
 export default {
   data () {
     return {
       popupVisible: false,
+      musicSelectVisible: false,
       className: 'play',
       holidayId: this.$route.query.holidayId,
       cardId: this.$route.query.cardId,
@@ -16,8 +17,10 @@ export default {
       ],
       music: [
         [
-          { url: '../../static/music/00.mp3' },
-          { url: '../../static/music/00.mp3' }
+          { url: '../../static/music/00.mp3', name: '新年快乐', isActive: false },
+          { url: '../../static/music/01.mp3', name: '欢心', isActive: false },
+          { url: '../../static/music/02.mp3', name: '终曲', isActive: false },
+          { url: '../../static/music/03.mp3', name: 'sfag', isActive: false }
         ]
       ],
       currentGreet: '',
@@ -27,6 +30,7 @@ export default {
   components: {
     mtPopup: Popup,
     mtField: Field,
+    mtButton: Button,
     card00,
     card01
   },
@@ -42,6 +46,21 @@ export default {
         this.className = 'play'
         e.target.childNodes[0].play()
       }
+    },
+    changeMusic () {
+      this.musicSelectVisible = true
+    },
+    selectMusic (gIndex, mIndex) {
+      this.currentMusicUrl = this.music[gIndex][mIndex].url
+      for (let i = 0; i < this.music.length; i++) {
+        for (let j = 0; j < this.music[i].length; j++) {
+          this.music[i][j].isActive = false
+        }
+      }
+      this.music[gIndex][mIndex].isActive = true
+    },
+    sureMusic () {
+      this.musicSelectVisible = false
     }
   },
   computed: {
@@ -53,5 +72,9 @@ export default {
     this.cardsToggle[parseInt(this.holidayId)][parseInt(this.cardId)] = true
     this.currentGreet = this.greets[this.holidayId].text
     this.currentMusicUrl = this.music[this.holidayId][this.cardId].url
+    this.music[this.holidayId][this.cardId].isActive = true
+  },
+  mounted () {
+    // document.getElementById('#myAudio').play()
   }
 }

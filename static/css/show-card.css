@@ -2,8 +2,38 @@
   position: relative;
   overflow: hidden;
 }
-.show-card .popup-textarea {
+.show-card .popup-textarea .textarea {
+  font-size: 0.7rem;
+  background: skyblue;
+}
+.show-card .popup-textarea .textarea textarea {
+  background: skyblue;
+  color: #FFFFFF;
+}
+.show-card .popup-textarea, .show-card .popup-music {
   width: 100%;
+}
+.show-card .popup-music {
+  height: 100%;
+}
+.show-card .popup-music ul {
+  height: 100%;
+}
+.show-card .popup-music li {
+  line-height: 2rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid silver;
+  padding-left: 2em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+}
+.show-card .popup-music li.active {
+  background: darkseagreen;
+}
+.show-card .popup-music .sureMusic {
+  width: 100%;
+  font-size: 0.8rem;
+  height: 2rem;
 }
 .show-card .foot-wrap {
   position: absolute;
@@ -58,22 +88,24 @@
   margin-top: 0.1rem;
 }
 .card-audio {
-    width: 2.4rem;
-    height: 2.4rem;
-    position: fixed;
-    top: 0.5rem;
-    right: 0.5rem;
-    display: inline-block;
-    z-index: 10;
-    background:url(../imgs/music.png) no-repeat;
-  }
-  a.play {
-    animation:rotate 1s linear infinite;
-  }
-  @keyframes rotate {
-    from {
-      transform:rotate(0deg);
-    } to {
-      transform:rotate(360deg);
-    }
-  }
+  width: 2.4rem;
+  height: 2.4rem;
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: inline-block;
+  z-index: 10;
+  background:url(../imgs/music.png) no-repeat;
+  background-size: 100%;
+
+}
+a.play {
+  animation:rotate 1s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform:rotate(0deg);
+  } to {
+        transform:rotate(360deg);
+      }
+}

@@ -1,11 +1,18 @@
 <div class="show-card">
-  <mt-popup v-model="popupVisible" class="popup-textarea" position="top"> 
-    <mt-field v-model="currentGreet"  type="textarea" rows="4"></mt-field>
+  <mt-popup v-model="popupVisible" class="popup-textarea" position="top">
+    <mt-field v-model="currentGreet"  type="textarea" rows="4" class="textarea"></mt-field>
+  </mt-popup>
+  <mt-popup v-model="musicSelectVisible" class="popup-music" position="right">
+    <mt-button type="default" class="sureMusic" @click="sureMusic">确定并返回</mt-button>
+    <ul v-for="(group, gIndex) in music">
+      <li v-for="(m, mIndex) in group" @click="selectMusic(gIndex, mIndex)" :class="{ active: m.isActive }">
+        {{ m.name }}
+      </li>
+    </ul>
   </mt-popup>
   <router-link :to="backPath" class="nav"></router-link>
   <a :class="className" @click="control" class="card-audio">
-    <audio autoplay="autoplay" loop="loop">
-      <source :src="currentMusicUrl">
+    <audio autoplay="autoplay" loop="loop" :src="currentMusicUrl" id="myAudio">
     </audio>
   </a>
   <card00 v-if="cardsToggle[0][0]" :greet="currentGreet"></card00>
