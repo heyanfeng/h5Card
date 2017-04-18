@@ -61,6 +61,9 @@ export default {
     },
     sureMusic () {
       this.musicSelectVisible = false
+    },
+    share () {
+      // window.plugins.socialsharing.share
     }
   },
   computed: {
@@ -75,6 +78,6 @@ export default {
     this.music[this.holidayId][this.cardId].isActive = true
   },
   mounted () {
-    // document.getElementById('#myAudio').play()
+    document.getElementById('myAudio').play()
   }
 }

@@ -43,6 +43,8 @@
 }
 .show-card .foot-options {
   padding: 0.5rem 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.2);
