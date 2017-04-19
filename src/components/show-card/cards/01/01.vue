@@ -13,7 +13,11 @@
     </div>
   </div>
 </template>
-<script src="./01.js"></script>
+<script>
+  export default {
+    props: ['greet']
+  }
+</script>
 <style scoped>
   @font-face {
     font-family: wenyuejuzhen;

@@ -1,5 +1,7 @@
 import card00 from './cards/01/01.vue'
 import card01 from './cards/02/02.vue'
+import card02 from './cards/03/03.vue'
+import card03 from './cards/04/04.vue'
 import {Popup, Field, Button} from 'mint-ui'
 export default {
   data () {
@@ -32,7 +34,9 @@ export default {
     mtField: Field,
     mtButton: Button,
     card00,
-    card01
+    card01,
+    card02,
+    card03
   },
   methods: {
     modiText () {
