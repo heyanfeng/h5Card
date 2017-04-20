@@ -3,7 +3,7 @@
     <img src="./imgs/bg.jpg" class="bg">
     <img src="./imgs/white-point.png" class="white-point animated fadeIn infinite">
     <img src="./imgs/foam.png" class="foam animated fadeOut infinite">
-    <img src="./imgs/tree.png" class="tree">
+    <img src="./imgs/tree.png" class="tree animated rotateIn">
     <div class="words animated zoomInUp" v-text="greet">
     </div>
   </div>
@@ -53,9 +53,9 @@
     font-size: 0.8rem;
     text-indent: 2em;
     line-height: 1.5rem;
-    color: brown;
+    color: cadetblue;
     z-index: 3;
-    top: 48%;
+    top: 70%;
     animation-delay: 1s;
   }
 </style>

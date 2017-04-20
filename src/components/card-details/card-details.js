@@ -23,8 +23,7 @@ export default {
           thumbnails: [
             '../../../static/imgs/Christmas/thumb01.jpg',
             '../../../static/imgs/Christmas/thumb02.jpg',
-            '../../../static/imgs/Christmas/thumb03.jpg',
-            '../../../static/imgs/Christmas/thumb04.jpg'
+            '../../../static/imgs/Christmas/thumb03.jpg'
           ]
         },
         {

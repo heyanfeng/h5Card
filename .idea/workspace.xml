@@ -2,56 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="883c4d7f-a943-4865-bf7c-705ca433bc34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/show-card/cards/20/20.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/show-card/cards/21/21.vue" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/01/font/01.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/01/imgs/circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/01/imgs/denglong.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/01/imgs/fontImg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/01/imgs/shuimo1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/01/imgs/shuimo2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/01/imgs/shuzhi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/02/imgs/bottomImg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/02/imgs/middleImg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/02/imgs/tagImg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/02/imgs/topImg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/bottomFlower.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/bottomLeft.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/cloud1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/cloud2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/color1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/color2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/flower1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/flower2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/topLeft.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/topLeftLine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/topRight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/04.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/bottom-flower.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/flower.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/knot-s.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/knot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/people1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/people2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/people3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/show-card/cards/04/imgs/top-flower.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/imgs/yuandan/thumb02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/imgs/yuandan/thumb03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/imgs/yuandan/thumb04.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/cards/01/imgs/bg.jpg" afterPath="$PROJECT_DIR$/src/components/show-card/cards/01/imgs/bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/cards/02/imgs/bg.jpg" afterPath="$PROJECT_DIR$/src/components/show-card/cards/02/imgs/bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/bg.jpg" afterPath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/circle.png" afterPath="$PROJECT_DIR$/src/components/show-card/cards/03/imgs/circle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/imgs/Christmas/thumb04.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/card-details/card-details.js" afterPath="$PROJECT_DIR$/src/components/card-details/card-details.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/cards/01/01.vue" afterPath="$PROJECT_DIR$/src/components/show-card/cards/01/01.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/cards/02/02.vue" afterPath="$PROJECT_DIR$/src/components/show-card/cards/02/02.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/cards/03/03.vue" afterPath="$PROJECT_DIR$/src/components/show-card/cards/03/03.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/show-card.html" afterPath="$PROJECT_DIR$/src/components/show-card/show-card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/show-card.js" afterPath="$PROJECT_DIR$/src/components/show-card/show-card.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/show-card.css" afterPath="$PROJECT_DIR$/static/css/show-card.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/show-card/cards/21/21.vue" afterPath="$PROJECT_DIR$/src/components/show-card/cards/21/21.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,8 +37,8 @@
       <file leaf-file-name="21.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/show-card/cards/21/21.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+            <state relative-caret-position="486">
+              <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -96,6 +49,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-621">
               <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card-details.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/card-details/card-details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card-details.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/card-details/card-details.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -173,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/components/show-card/cards/01/01.js" />
         <option value="$PROJECT_DIR$/src/components/show-card/cards/01/01.vue" />
         <option value="$PROJECT_DIR$/src/components/show-card/cards/11/11.vue" />
-        <option value="$PROJECT_DIR$/src/components/card-details/card-details.js" />
         <option value="$PROJECT_DIR$/src/components/show-card/cards/04/04.vue" />
         <option value="$PROJECT_DIR$/src/components/show-card/cards/41/41.vue" />
         <option value="$PROJECT_DIR$/src/components/show-card/cards/40/40.vue" />
@@ -181,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/components/show-card/cards/20/20.vue" />
         <option value="$PROJECT_DIR$/src/components/show-card/show-card.js" />
         <option value="$PROJECT_DIR$/src/components/show-card/show-card.html" />
+        <option value="$PROJECT_DIR$/src/components/card-details/card-details.js" />
         <option value="$PROJECT_DIR$/src/components/show-card/cards/21/21.vue" />
       </list>
     </option>
@@ -541,12 +514,12 @@
       <workItem from="1492499203264" duration="6048000" />
       <workItem from="1492563942234" duration="11900000" />
       <workItem from="1492653247808" duration="7416000" />
-      <workItem from="1492669331075" duration="7235000" />
+      <workItem from="1492669331075" duration="7417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73327000" />
+    <option name="totallyTimeSpent" value="73509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
@@ -837,22 +810,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/show-card/cards/11/11.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/card-details/card-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/card-details/card-details.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/show-card/cards/04/04.vue" />
     <entry file="file://$PROJECT_DIR$/src/components/show-card/cards/41/41.vue" />
     <entry file="file://$PROJECT_DIR$/src/components/show-card/cards/40/40.vue">
@@ -909,10 +866,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/card-details/card-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/card-details/card-details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/show-card/cards/21/21.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state relative-caret-position="486">
+          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
           <folding />
         </state>
       </provider>
