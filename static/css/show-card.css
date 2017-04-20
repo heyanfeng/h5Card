@@ -15,9 +15,7 @@
 }
 .show-card .popup-music {
   height: 100%;
-}
-.show-card .popup-music ul {
-  height: 100%;
+  overflow: auto;
 }
 .show-card .popup-music li {
   line-height: 2rem;

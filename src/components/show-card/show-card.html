@@ -19,6 +19,10 @@
   <card01 v-if="cardsToggle[0][1]" :greet="currentGreet"></card01>
   <card02 v-if="cardsToggle[0][2]" :greet="currentGreet"></card02>
   <card03 v-if="cardsToggle[0][3]" :greet="currentGreet"></card03>
+  <card10 v-if="cardsToggle[1][0]" :greet="currentGreet"></card10>
+  <card20 v-if="cardsToggle[2][0]" :greet="currentGreet"></card20>
+  <card21 v-if="cardsToggle[2][1]" :greet="currentGreet"></card21>
+  <card40 v-if="cardsToggle[4][0]" :greet="currentGreet"></card40>
   <div class="foot-wrap">
     <div class="foot-options">
       <div class="icon-wrap" @click="modiText">

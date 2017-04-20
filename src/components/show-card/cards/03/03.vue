@@ -1,18 +1,16 @@
 <template>
-  <div class="card-03">
-    <img src="./imgs/topLeft.png" class="topLeft animated slideInDown">
-    <img src="./imgs/topLeftLine.png" class="topLeftLine animated slideInDown">
-    <img src="./imgs/topRight.png" class="topRight animated slideInRight">
-    <img src="./imgs/circle.png" class="middleCircle animated rollIn">
-    <img src="./imgs/cloud1.png" class="cloud1 animated fadeInRight">
-    <img src="./imgs/cloud1.png" class="cloud2 animated fadeInRight">
-    <img src="./imgs/cloud2.png" class="cloudBig animated fadeInRight">
-    <img src="./imgs/color2.png" class="color2Img animated fadeIn">
-    <img src="./imgs/color1.png" class="color1Img animated fadeIn">
-    <img src="./imgs/bottomFlower.png" class="bottomFlower animated slideInLeft">
-    <img src="./imgs/bottomleft.png" class="bottomLeft animated slideInUp">
-    <img src="./imgs/flower1.png" class="flower1Img animated slideInUp">
-    <img src="./imgs/flower2.png" class="flower2Img animated slideInUp">
+  <div class="card-04">
+    <img src="./imgs/top-flower.png" class="top-flower animated slideInDown">
+    <img src="./imgs/knot.png" class="knot">
+    <img src="./imgs/knot-s.png" class="knot-s1 knot-s animated fadeIn">
+    <img src="./imgs/knot-s.png" class="knot-s2 knot-s animated fadeIn">
+    <img src="./imgs/knot-s.png" class="knot-s3 knot-s animated fadeIn">
+    <img src="./imgs/people1.png" class="people1 animated fadeIn">
+    <img src="./imgs/people2.png" class="people2 animated fadeIn">
+    <img src="./imgs/people3.png" class="people3 animated fadeIn">
+    <img src="./imgs/bottom-flower.png" class="bottom-flower animated slideInUp">
+    <img src="./imgs/circle.png" class="bottom-circle animated fadeInUp">
+    <img src="./imgs/flower.png" class="flower animated fadeIn">
     <img src="./imgs/bg.jpg" class="bg">
     <div class="words animated zoomInUp" v-text="greet">
     </div>
@@ -24,112 +22,88 @@
   }
 </script>
 <style scoped>
-  .card-03 {
+  .card-04 {
     width: 18.75rem;
     height: 33.35rem;
   }
-  .card-03 img {
+  .card-04 img {
     position: absolute;
   }
-  .card-03 .bg{
+  .card-04 .bg{
     width: 100%;
     height: 100%;
     z-index: -1;
   }
-  .card-03 .topLeft {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 12rem;
-    height: auto;
-  }
-  .card-03 .topLeftLine {
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 2.5rem;
-    height: auto;
-    animation-delay: 1s;
-  }
-  .card-03 .topRight {
+  .card-04 .top-flower{
+    width: 8rem;
     top: 0;
     right: 0;
-    z-index: 1;
-    width: 4rem;
   }
-  .card-03 .middleCircle {
-    top: 50%;
-    left: 50%;
-    margin-left: -9rem;
-    margin-top: -8.95rem;
-    width: 18rem;
-    z-index: 1;
-    animation-duration: 1s;
-  }
-  .card-03 .cloud1 {
-    top: 18rem;
-    left: 50%;
-    width: 4rem;
-    z-index: 1;
-    animation-delay: 1s;
-  }
-  .card-03 .cloud2 {
-    top: 19rem;
-    left: 12rem;
-    width: 4rem;
-    z-index: 2;
+  .card-04 .knot{
+    width: 8rem;
+    top: 2rem;
+    left: 5rem;
     animation-delay: 2s;
   }
-  .card-03 .cloudBig {
-    top: 19rem;
-    left: 4rem;
-    width: 6rem;
-    z-index: 3;
+  .card-04 .knot-s{
+    width: 2rem;
+    animation-delay: 2s;
+    transform-origin: 50% 0;
+    animation: knot-hing 2s ease-in-out infinite;
+    animation-direction: alternate;
+  }
+  .card-04 .knot-s1{
+    top: 10.4rem;
+    left: 5rem;
+    animation-delay: 2s;
+  }
+  .card-04 .knot-s2{
+    top: 10.4rem;
+    left: 11rem;
+    animation-delay: 2s;
+  }
+  .card-04 .knot-s3{
+    top: 24.7rem;
+    left: 8rem;
+    animation-delay: 2s;
+  }
+  .card-04 .people1{
+    width: 2rem;
+    top: 14rem;
+    left: 2.5rem;
+    animation-delay: 1s;
+  }
+  .card-04 .people2{
+    width: 3rem;
+    top: 16.5rem;
+    left: 2rem;
+    animation-delay: 2s;
+  }
+  .card-04 .people3{
+    width: 2rem;
+    top: 20rem;
+    left: 2.5rem;
     animation-delay: 3s;
   }
-  .card-03 .color2Img {
-    top: 50%;
-    z-index: 0;
-    width: 100%;
-    transform: translateY(-50%);
-    animation-delay: 1.5s;
-  }
-  .card-03 .color1Img {
-    bottom: 5rem;
-    width: 100%;
-    height: auto;
-    z-index: 0;
-    animation-delay: 1s;
-  }
-  .card-03 .bottomLeft {
+  .card-04 .bottom-flower{
+    width: 20rem;
     bottom: 0;
-    width: 100%;
-    height: auto;
-    z-index: 0;
+    left: -8rem;
   }
-  .card-03 .bottomFlower {
-    bottom: 0;
-    left: 0;
-    width: 8rem;
-    height: auto;
-    z-index: 2;
-    animation-delay: 1s;
+  .card-04 .bottom-circle{
+    width: 20rem;
+    right: -10rem;
+    bottom: -10rem;
+    animation: circleRotate 10s linear infinite;
+    animation-delay: 2s;
   }
-  .card-03 .flower1Img {
-    bottom: 0;
+  .card-04 .flower{
+    width: 6rem;
     right: 0;
-    width: 2.5rem;
-    height: auto;
-    animation-delay: 0.5s;
-  }
-  .card-03 .flower2Img {
     bottom: 0;
-    right: 2.5rem;
-    width: 5rem;
-    height: auto;
     animation-delay: 1s;
   }
-  .card-03 .words {
+  .card-04 .words {
     padding: 1rem;
     display: inline-block;
     position: absolute;
@@ -139,5 +113,21 @@
     color: seagreen;
     z-index: 3;
     animation-delay: 3.5s;
+  }
+  @keyframes circleRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes knot-hing {
+    from {
+      transform: rotate(-10deg);
+    }
+    to {
+      transform: rotate(10deg);
+    }
   }
 </style>

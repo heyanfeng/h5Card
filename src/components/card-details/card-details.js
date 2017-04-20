@@ -15,10 +15,7 @@ export default {
         {
           text: '元旦小心机，贺卡送祝福。“元旦”一词系中国“土产”，在中国农历中已沿用4000多年，但现行公历“元旦”为1949年所定，随着2017年的到来，它只有“68岁”',
           thumbnails: [
-            '../../../static/imgs/yuandan/thumb01.jpg',
-            '../../../static/imgs/yuandan/thumb02.jpg',
-            '../../../static/imgs/yuandan/thumb03.jpg',
-            '../../../static/imgs/yuandan/thumb04.jpg'
+            '../../../static/imgs/yuandan/thumb01.jpg'
           ]
         },
         {

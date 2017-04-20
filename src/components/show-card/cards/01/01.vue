@@ -1,15 +1,11 @@
 <template>
-  <div class="card-01">
-    <img class="denglong animated fadeInLeft" src="./imgs/denglong.png">
-    <img class="shuzhi animated rotateInUpRight" src="./imgs/shuzhi.png">
-    <img class="fontImg animated flip" src="./imgs/fontImg.png">
-    <img class="circle" src="./imgs/circle.png">
+  <div class="card-02">
+    <img src="./imgs/topImg.png" class="topImg animated slideInDown">
+    <img src="./imgs/middleImg.png" class="middleImg animated flip">
+    <img src="./imgs/tagImg.png" class="tagImg animated bounceInRight">
+    <img src="./imgs/bottomImg.png" class="bottomImg animated slideInUp">
     <img src="./imgs/bg.jpg" class="bg">
-    <div class="words animated fadeInUp" v-text="greet">
-    </div>
-    <div class="shuimo">
-      <img class="shuimo1 animated fadeInUp" src="./imgs/shuimo1.png">
-      <img class="shuimo2 animated fadeInUp" src="./imgs/shuimo2.png">
+    <div class="words animated zoomInUp" v-text="greet">
     </div>
   </div>
 </template>
@@ -19,85 +15,58 @@
   }
 </script>
 <style scoped>
-  @font-face {
-    font-family: wenyuejuzhen;
-    src: url('font/01.ttf');
-  }
-  .card-01 {
-    width: 100%;
+  .card-02 {
+    width: 18.75rem;
     height: 33.35rem;
   }
-  .bg {
+  .card-02 img {
+    position: absolute;
+  }
+  .card-02 .bg{
     width: 100%;
     height: 100%;
+    z-index: -1;
+  }
+  .card-02 .topImg {
+    top: 0;
     z-index: 1;
-  }
-  .denglong {
-    width: 5rem;
-    height: 8.85rem;
-    position: absolute;
-    left: 1rem;
-    top: 2rem;
-  }
-  .shuzhi {
-    width: 15rem;
-    height: 10.8rem;
-    position: absolute;
-    right: -2rem;
-    top: -1rem;
-  }
-  .fontImg {
-    width: 10rem;
-    height: 10.4rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -5rem;
-    margin-top: -5.2rem;
-  }
-  .circle {
-    width: 10rem;
-    height: 9.9rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -5rem;
-    margin-top: -4.95rem;
-    animation-delay: 0.5s;
-    animation: circleRotate 2s linear infinite;
-  }
-  @keyframes circleRotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  .shuimo1 {
     width: 100%;
     height: auto;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
+    animation-delay: 1s;
   }
-  .shuimo2 {
+  .card-02 .middleImg {
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 10rem;
+    transform: translateY(-50%);
+    margin-left: -5rem;
+    animation-duration: 1s;
+  }
+  .card-02 .tagImg {
+    top: 40%;
+    left: 50%;
+    z-index: 1;
+    width: 12.5rem;
+    transform: translateY(-50%);
+    margin-left: -6.25rem;
+    animation-delay: 2s;
+  }
+  .card-02 .bottomImg {
+    bottom: 0;
     width: 100%;
     height: auto;
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
   }
-  .words {
-    font-family: wenyuejuzhen;
+  .card-02 .words {
+    position: absolute;
     font-size: 0.7rem;
     text-indent: 2em;
+    bottom: 4.5rem;
+    padding-left: 5rem;
     line-height: 1.5rem;
-    padding: 1rem;
-    position: absolute;
-    bottom: 4rem;
-    color: darkgoldenrod;
-    animation-duration: 3s;
+    right: 0.5rem;
+    color: sienna;
+    animation-delay: 2s;
   }
 </style>
