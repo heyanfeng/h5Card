@@ -40,13 +40,6 @@ export default {
           ]
         },
         {
-          text: '心怀感恩，感谢彼此！',
-          thumbnails: [
-            '../../../static/imgs/thanks/thumb01.jpg',
-            '../../../static/imgs/thanks/thumb02.jpg'
-          ]
-        },
-        {
           text: '爱不是三言两语能说清的，要用高大上的贺卡来表示一份心意！',
           thumbnails: [
             '../../../static/imgs/love/thumb01.jpg',

@@ -24,10 +24,6 @@ export default {
           text: '生日贺卡'
         },
         {
-          img: '../../../static/imgs/index-bg-thank.jpg',
-          text: '感恩节贺卡'
-        },
-        {
           img: '../../../static/imgs/index-bg-love.jpg',
           text: '情人节贺卡'
         },
