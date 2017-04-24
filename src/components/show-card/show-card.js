@@ -9,6 +9,10 @@ import card22 from './cards/22/22.vue'
 import card30 from './cards/30/30.vue'
 import card31 from './cards/31/31.vue'
 import card40 from './cards/40/40.vue'
+import card50 from './cards/50/50.vue'
+import card51 from './cards/51/51.vue'
+import card60 from './cards/60/60.vue'
+import card61 from './cards/61/61.vue'
 import {Popup, Field, Button} from 'mint-ui'
 export default {
   data () {
@@ -23,14 +27,18 @@ export default {
         [false],
         [false, false, false],
         [false, false],
-        [false]
+        [false],
+        [false, false],
+        [false, false]
       ],
       greets: [
         { text: '凯歌辞旧岁，骏羊迎新春。丰年飞瑞雪，盛世展宏图。万象换新颜，神州共欢腾。合家欢喜忙，齐心酬壮志。只愿诸事顺，一年都欢畅。鸡年到了，恭祝你鸡年实现所有抱负。' },
         { text: '元旦到来恭喜你，发个短信祝福你，成功事业属于你，开心笑容常伴你，健康长寿想着你，最后还要通知你，财神爷爷也要拜访你!元旦快乐!' },
         { text: '无数个圣诞的祝福，那友谊，厚厚积累的愉快记忆，人间的亲情，天堂的温馨，终于带给了我们大家。' },
         { text: '冬至这天，北半球昼短夜长，这天正是阳气初萌而冬尽春回的日子，所以称之为”冬至”。愿朋友们在这寒尽暖溢的日子里，永远洋溢春意，心底驻满暖意。' },
-        { text: '洪亮的钟声荡气回荡，璀璨的烟花美丽绽放，潺潺的溪水叮咚回生日的歌曲为你歌唱。祝你生日快乐，人生路上平安吉祥，好运永远伴你身旁！' }
+        { text: '洪亮的钟声荡气回荡，璀璨的烟花美丽绽放，潺潺的溪水叮咚回生日的歌曲为你歌唱。祝你生日快乐，人生路上平安吉祥，好运永远伴你身旁！' },
+        { text: '送你一座后花园，在疲倦与迷惘中，推开后门，去看看清风明月，行云流水。园子里栽的是智慧树，流的是忘忧泉，开的是自在花，搭的是幸运桥，愿好运好心情。' },
+        { text: '中秋佳节月儿圆又圆，圆出阖家团聚，千里亲情短信一线牵，传达温馨团圆喜笑颜，中秋节虽不能送你月饼尝鲜，但送你一份祝福的心情：中秋节日里快乐相伴，家庭团圆幸福更美满！' }
       ],
       music: [
         [
@@ -53,6 +61,14 @@ export default {
         ],
         [
           { url: '../../static/music/40.mp3', name: '生日快乐', isActive: false }
+        ],
+        [
+          { url: '../../static/music/50.mp3', name: '情人节快乐1', isActive: false },
+          { url: '../../static/music/51.mp3', name: '情人节快乐2', isActive: false }
+        ],
+        [
+          { url: '../../static/music/60.mp3', name: '中秋快乐1', isActive: false },
+          { url: '../../static/music/61.mp3', name: '中秋快乐2', isActive: false }
         ]
       ],
       currentGreet: '',
@@ -73,7 +89,11 @@ export default {
     card22,
     card30,
     card31,
-    card40
+    card40,
+    card50,
+    card51,
+    card60,
+    card61
   },
   methods: {
     modiText () {

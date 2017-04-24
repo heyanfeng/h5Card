@@ -43,8 +43,6 @@ export default {
           text: '爱不是三言两语能说清的，要用高大上的贺卡来表示一份心意！',
           thumbnails: [
             '../../../static/imgs/love/thumb01.jpg',
-            '../../../static/imgs/love/thumb02.jpg',
-            '../../../static/imgs/love/thumb03.jpg',
             '../../../static/imgs/love/thumb04.jpg'
           ]
         },
