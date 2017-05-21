@@ -4,14 +4,14 @@
     <img src="./imgs/word.png" class="word animated fadeIn">
     <img src="./imgs/deer.png" class="deer animated slideInLeft">
     <img src="./imgs/back.png" class="back animated slideInUp">
-    <img src="./imgs/bg.jpg" class="bg">
+    <img :src="bgImg" class="bg">
     <div class="words animated zoomInUp" v-text="greet">
     </div>
   </div>
 </template>
 <script>
   export default {
-    props: ['greet']
+    props: ['greet', 'bgImg']
   }
 </script>
 <style scoped>

@@ -10,7 +10,6 @@ import '../static/css/index.css'
 import '../static/css/card-details.css'
 import '../static/css/show-card.css'
 Vue.config.productionTip = false
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -3,14 +3,14 @@
     <img src="./imgs/pendant.png" class="pendant animated swing">
     <img src="./imgs/pendant1.png" class="pendant1">
     <img src="./imgs/pendant2.png" class="pendant2">
-    <img src="./imgs/bg.jpg" class="bg">
+    <img :src="bgImg" class="bg">
     <div class="words animated zoomInUp" v-text="greet">
     </div>
   </div>
 </template>
 <script>
   export default {
-    props: ['greet']
+    props: ['greet', 'bgImg']
   }
 </script>
 <style scoped>

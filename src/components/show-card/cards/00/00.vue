@@ -4,7 +4,7 @@
     <img class="shuzhi animated rotateInUpRight" src="./imgs/shuzhi.png">
     <img class="fontImg animated flip" src="./imgs/fontImg.png">
     <img class="circle" src="./imgs/circle.png">
-    <img src="./imgs/bg.jpg" class="bg">
+    <img :src="bgImg" class="bg">
     <div class="words animated fadeInUp" v-text="greet">
     </div>
     <div class="shuimo">
@@ -15,7 +15,7 @@
 </template>
 <script>
   export default {
-    props: ['greet']
+    props: ['greet', 'bgImg']
   }
 </script>
 <style scoped>

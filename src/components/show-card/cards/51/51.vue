@@ -1,6 +1,6 @@
 <template>
   <div class="card-51">
-    <img src="./imgs/bg.jpg" class="bg">
+    <img :src="bgImg" class="bg">
     <img src="./imgs/shape.png" class="sharp1">
     <img src="./imgs/shape.png" class="sharp2">
     <img src="./imgs/shape.png" class="sharp3">
@@ -11,7 +11,7 @@
 </template>
 <script>
   export default {
-    props: ['greet']
+    props: ['greet', 'bgImg']
   }
 </script>
 <style scoped>

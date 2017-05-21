@@ -20,14 +20,14 @@
       <img src="./imgs/flower3.png" class="flower animated slideInLeft">
       <img src="./imgs/flower.png" class="flower animated slideInLeft">
     </div>
-    <img src="./imgs/bg.jpg" class="bg">
+    <img :src="bgImg" class="bg">
     <div class="words" v-text="greet">
     </div>
   </div>
 </template>
 <script>
   export default {
-    props: ['greet']
+    props: ['greet', 'bgImg']
   }
 </script>
 <style scoped>

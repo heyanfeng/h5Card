@@ -10,12 +10,16 @@
   background: skyblue;
   color: #FFFFFF;
 }
-.show-card .popup-textarea, .show-card .popup-music {
+.show-card .popup-textarea, 
+.show-card .popup-music, 
+.show-card .popup-bg {
   width: 100%;
 }
-.show-card .popup-music {
+.show-card .popup-music,
+.show-card .popup-bg {
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .show-card .popup-music li {
   line-height: 2rem;
@@ -25,10 +29,24 @@
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
 }
+.show-card .popup-bg li {
+  float: left;
+  width: 5.9rem;
+  height: 5.9rem;
+  margin: 2px 2px;
+}
+.show-card .popup-bg li img {
+  width: 100%;
+  height: 100%;
+}
 .show-card .popup-music li.active {
   background: darkseagreen;
 }
-.show-card .popup-music .sureMusic {
+.show-card .popup-bg li img.active {
+  outline: 2px solid #f00;
+}
+.show-card .popup-music .sureMusic,
+.show-card .popup-bg .sureBg {
   width: 100%;
   font-size: 0.8rem;
   height: 2rem;
@@ -59,25 +77,25 @@
   display: inline-block;
 }
 .foot-options .font {
-  background-image: url("../imgs/font-icon.png");
+  background-image: url("./imgs/font-icon.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60%;
 }
 .foot-options .picture {
-  background-image: url("../imgs/pic-icon.png");
+  background-image: url("./imgs/pic-icon.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60%;
 }
 .foot-options .music {
-  background-image: url("../imgs/music-icon.png");
+  background-image: url("./imgs/music-icon.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60%;
 }
 .foot-options .share {
-  background-image: url("../imgs/share-icon.png");
+  background-image: url("./imgs/share-icon.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60%;
@@ -95,17 +113,41 @@
   right: 0.5rem;
   display: inline-block;
   z-index: 10;
-  background:url(../imgs/music.png) no-repeat;
+  background:url(./imgs/music.png) no-repeat;
   background-size: 100%;
 
 }
-a.play {
+.play {
+  -webkit-animation:rotate 1s linear infinite;
+  -ms-animation:rotate 1s linear infinite;
   animation:rotate 1s linear infinite;
 }
-@keyframes rotate {
-  from {
+@-webkit-keyframes rotate {
+  0% {
     transform:rotate(0deg);
-  } to {
+  } 100% {
         transform:rotate(360deg);
       }
+}
+@-ms-keyframes rotate {
+  0% {
+    transform:rotate(0deg);
+  } 100% {
+        transform:rotate(360deg);
+      }
+}
+@keyframes rotate {
+  0% {
+    transform:rotate(0deg);
+  } 100% {
+        transform:rotate(360deg);
+      }
+}
+.share-area {
+  width: 100%;
+}
+.share-area input {
+  width: 100%;
+  line-height: 2rem;
+  font-size: 1rem;
 }

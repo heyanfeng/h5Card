@@ -14,11 +14,14 @@ import card51 from './cards/51/51.vue'
 import card60 from './cards/60/60.vue'
 import card61 from './cards/61/61.vue'
 import {Popup, Field, Button} from 'mint-ui'
+import QArt from 'qartjs'
 export default {
   data () {
     return {
       popupVisible: false,
+      bgSelectVisible: false,
       musicSelectVisible: false,
+      shareVisible: false,
       className: 'play',
       holidayId: this.$route.query.holidayId,
       cardId: this.$route.query.cardId,
@@ -42,37 +45,70 @@ export default {
       ],
       music: [
         [
-          { url: '../../static/music/00.mp3', name: '新年快乐1', isActive: false },
-          { url: '../../static/music/01.mp3', name: '新年快乐2', isActive: false },
-          { url: '../../static/music/02.mp3', name: '新年快乐3', isActive: false },
-          { url: '../../static/music/03.mp3', name: '新年快乐4', isActive: false }
+          { url: '../../static/css/music/00.mp3', name: '新年快乐1', isActive: false },
+          { url: '../../static/css/music/01.mp3', name: '新年快乐2', isActive: false },
+          { url: '../../static/css/music/02.mp3', name: '新年快乐3', isActive: false },
+          { url: '../../static/css/music/03.mp3', name: '新年快乐4', isActive: false }
         ],
         [
-          { url: '../../static/music/10.mp3', name: '元旦快乐', isActive: false }
+          { url: '../../static/css/music/10.mp3', name: '元旦快乐', isActive: false }
         ],
         [
-          { url: '../../static/music/20.mp3', name: '圣诞快乐1', isActive: false },
-          { url: '../../static/music/21.mp3', name: '圣诞快乐2', isActive: false },
-          { url: '../../static/music/22.mp3', name: '圣诞快乐3', isActive: false }
+          { url: '../../static/css/music/20.mp3', name: '圣诞快乐1', isActive: false },
+          { url: '../../static/css/music/21.mp3', name: '圣诞快乐2', isActive: false },
+          { url: '../../static/css/music/22.mp3', name: '圣诞快乐3', isActive: false }
         ],
         [
-          { url: '../../static/music/30.mp3', name: '冬至1', isActive: false },
-          { url: '../../static/music/31.mp3', name: '冬至2', isActive: false }
+          { url: '../../static/css/music/30.mp3', name: '冬至1', isActive: false },
+          { url: '../../static/css/music/31.mp3', name: '冬至2', isActive: false }
         ],
         [
-          { url: '../../static/music/40.mp3', name: '生日快乐', isActive: false }
+          { url: '../../static/css/music/40.mp3', name: '生日快乐', isActive: false }
         ],
         [
-          { url: '../../static/music/50.mp3', name: '情人节快乐1', isActive: false },
-          { url: '../../static/music/51.mp3', name: '情人节快乐2', isActive: false }
+          { url: '../../static/css/music/50.mp3', name: '情人节快乐1', isActive: false },
+          { url: '../../static/css/music/51.mp3', name: '情人节快乐2', isActive: false }
         ],
         [
-          { url: '../../static/music/60.mp3', name: '中秋快乐1', isActive: false },
-          { url: '../../static/music/61.mp3', name: '中秋快乐2', isActive: false }
+          { url: '../../static/css/music/60.mp3', name: '中秋快乐1', isActive: false },
+          { url: '../../static/css/music/61.mp3', name: '中秋快乐2', isActive: false }
+        ]
+      ],
+      backgroudImg: [
+        [
+          { isActive: false, url: '/static/css/bgImgs/00.jpg' },
+          { isActive: false, url: '/static/css/bgImgs/01.jpg' },
+          { isActive: false, url: '/static/css/bgImgs/02.jpg' },
+          { isActive: false, url: '/static/css/bgImgs/03.jpg' }
+        ],
+        [
+          { isActive: false, url: '/static/css/bgImgs/10.jpg' }
+        ],
+        [
+          { isActive: false, url: '/static/css/bgImgs/20.png' },
+          { isActive: false, url: '/static/css/bgImgs/21.jpg' },
+          { isActive: false, url: '/static/css/bgImgs/22.jpg' }
+        ],
+        [
+          { isActive: false, url: '/static/css/bgImgs/30.jpg' },
+          { isActive: false, url: '/static/css/bgImgs/31.jpg' }
+        ],
+        [
+          { isActive: false, url: '/static/css/bgImgs/40.jpg' }
+        ],
+        [
+          { isActive: false, url: '/static/css/bgImgs/50.jpg' },
+          { isActive: false, url: '/static/css/bgImgs/51.jpg' }
+        ],
+        [
+          { isActive: false, url: '/static/css/bgImgs/60.jpg' },
+          { isActive: false, url: '/static/css/bgImgs/61.jpg' }
         ]
       ],
       currentGreet: '',
-      currentMusicUrl: ''
+      currentMusicUrl: '',
+      currentBgImg: '',
+      currentHref: ''
     }
   },
   components: {
@@ -99,6 +135,9 @@ export default {
     modiText () {
       this.popupVisible = true
     },
+    modiBg () {
+      this.bgSelectVisible = true
+    },
     control (e) {
       if (this.className) {
         this.className = ''
@@ -120,11 +159,29 @@ export default {
       }
       this.music[gIndex][mIndex].isActive = true
     },
+    selectBg (gIndex, mIndex) {
+      this.currentBgImg = this.backgroudImg[gIndex][mIndex].url
+      for (let i = 0; i < this.backgroudImg.length; i++) {
+        for (let j = 0; j < this.backgroudImg[i].length; j++) {
+          this.backgroudImg[i][j].isActive = false
+        }
+      }
+      this.backgroudImg[gIndex][mIndex].isActive = true
+    },
     sureMusic () {
       this.musicSelectVisible = false
     },
+    sureBg () {
+      this.bgSelectVisible = false
+    },
     share () {
-      // window.plugins.socialsharing.share
+      this.currentHref = location.href
+      this.shareVisible = true
+      const qart = new QArt({
+        value: location.href,
+        imagePath: '/static/css/bgImgs/00.jpg'
+      })
+      qart.make(document.getElementById('qrcode'))
     }
   },
   computed: {
@@ -136,7 +193,9 @@ export default {
     this.cardsToggle[parseInt(this.holidayId)][parseInt(this.cardId)] = true
     this.currentGreet = this.greets[this.holidayId].text
     this.currentMusicUrl = this.music[this.holidayId][this.cardId].url
+    this.currentBgImg = this.backgroudImg[this.holidayId][this.cardId].url
     this.music[this.holidayId][this.cardId].isActive = true
+    this.backgroudImg[this.holidayId][this.cardId].isActive = true
   },
   mounted () {
     document.getElementById('myAudio').play()

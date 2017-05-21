@@ -1,6 +1,6 @@
 <template>
   <div class="card-61">
-    <img src="./imgs/bg.jpg" class="bg">
+    <img :src="bgImg" class="bg">
     <img src="./imgs/top.png" class="top animated slideInDown">
     <img src="./imgs/fish3.png" class="fish3 animated slideInUp">
     <img src="./imgs/fish2.png" class="fish2 animated fadeIn">
@@ -16,7 +16,7 @@
 </template>
 <script>
   export default {
-    props: ['greet']
+    props: ['greet', 'bgImg']
   }
 </script>
 <style scoped>

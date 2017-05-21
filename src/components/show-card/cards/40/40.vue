@@ -1,6 +1,6 @@
 <template>
   <div class="card-40">
-    <img src="./imgs/bg.jpg" class="bg">
+    <img :src="bgImg" class="bg">
     <img src="./imgs/Birthday.png" class="birthday-words animated flip">
     <div class="words animated zoomInUp" v-text="greet">
     </div>
@@ -8,7 +8,7 @@
 </template>
 <script>
   export default {
-    props: ['greet']
+    props: ['greet', 'bgImg']
   }
 </script>
 <style scoped>

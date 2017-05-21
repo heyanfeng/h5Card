@@ -1,6 +1,6 @@
 <template>
   <div class="card-21">
-    <img src="./imgs/bg.jpg" class="bg">
+    <img :src="bgImg" class="bg">
     <img src="./imgs/white-point.png" class="white-point animated fadeIn infinite">
     <img src="./imgs/foam.png" class="foam animated fadeOut infinite">
     <img src="./imgs/tree.png" class="tree animated rotateIn">
@@ -10,7 +10,7 @@
 </template>
 <script>
   export default {
-    props: ['greet']
+    props: ['greet', 'bgImg']
   }
 </script>
 <style scoped>

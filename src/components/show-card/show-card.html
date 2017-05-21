@@ -10,35 +10,48 @@
       </li>
     </ul>
   </mt-popup>
+  <mt-popup v-model="bgSelectVisible" class="popup-bg" position="right">
+    <mt-button type="default" class="sureBg" @click="sureBg">确定并返回</mt-button>
+    <ul v-for="(group, gIndex) in backgroudImg">
+      <li v-for="(m, mIndex) in group" @click="selectBg(gIndex, mIndex)">
+        <img :src="m.url" :class="{ active: m.isActive }">
+      </li>
+    </ul>
+  </mt-popup>
+  <mt-popup v-model="shareVisible" class="share-area" position="bottom">
+    <div id="qrcode"></div>
+    <span>扫码或者复制下面链接即可分享</span>
+    <input type="text" v-model='currentHref'>
+  </mt-popup>
   <router-link :to="backPath" class="nav"></router-link>
   <a :class="className" @click="control" class="card-audio">
     <audio autoplay="autoplay" loop="loop" :src="currentMusicUrl" id="myAudio">
     </audio>
   </a>
-  <card00 v-if="cardsToggle[0][0]" :greet="currentGreet"></card00>
-  <card01 v-if="cardsToggle[0][1]" :greet="currentGreet"></card01>
-  <card02 v-if="cardsToggle[0][2]" :greet="currentGreet"></card02>
-  <card03 v-if="cardsToggle[0][3]" :greet="currentGreet"></card03>
-  <card10 v-if="cardsToggle[1][0]" :greet="currentGreet"></card10>
-  <card20 v-if="cardsToggle[2][0]" :greet="currentGreet"></card20>
-  <card21 v-if="cardsToggle[2][1]" :greet="currentGreet"></card21>
-  <card22 v-if="cardsToggle[2][2]" :greet="currentGreet"></card22>
-  <card30 v-if="cardsToggle[3][0]" :greet="currentGreet"></card30>
-  <card31 v-if="cardsToggle[3][1]" :greet="currentGreet"></card31>
-  <card40 v-if="cardsToggle[4][0]" :greet="currentGreet"></card40>
-  <card50 v-if="cardsToggle[5][0]" :greet="currentGreet"></card50>
-  <card51 v-if="cardsToggle[5][1]" :greet="currentGreet"></card51>
-  <card60 v-if="cardsToggle[6][0]" :greet="currentGreet"></card60>
-  <card61 v-if="cardsToggle[6][1]" :greet="currentGreet"></card61>
+  <card00 v-if="cardsToggle[0][0]" :greet="currentGreet" :bgImg='currentBgImg'></card00>
+  <card01 v-if="cardsToggle[0][1]" :greet="currentGreet" :bgImg='currentBgImg'></card01>
+  <card02 v-if="cardsToggle[0][2]" :greet="currentGreet" :bgImg='currentBgImg'></card02>
+  <card03 v-if="cardsToggle[0][3]" :greet="currentGreet" :bgImg='currentBgImg'></card03>
+  <card10 v-if="cardsToggle[1][0]" :greet="currentGreet" :bgImg='currentBgImg'></card10>
+  <card20 v-if="cardsToggle[2][0]" :greet="currentGreet" :bgImg='currentBgImg'></card20>
+  <card21 v-if="cardsToggle[2][1]" :greet="currentGreet" :bgImg='currentBgImg'></card21>
+  <card22 v-if="cardsToggle[2][2]" :greet="currentGreet" :bgImg='currentBgImg'></card22>
+  <card30 v-if="cardsToggle[3][0]" :greet="currentGreet" :bgImg='currentBgImg'></card30>
+  <card31 v-if="cardsToggle[3][1]" :greet="currentGreet" :bgImg='currentBgImg'></card31>
+  <card40 v-if="cardsToggle[4][0]" :greet="currentGreet" :bgImg='currentBgImg'></card40>
+  <card50 v-if="cardsToggle[5][0]" :greet="currentGreet" :bgImg='currentBgImg'></card50>
+  <card51 v-if="cardsToggle[5][1]" :greet="currentGreet" :bgImg='currentBgImg'></card51>
+  <card60 v-if="cardsToggle[6][0]" :greet="currentGreet" :bgImg='currentBgImg'></card60>
+  <card61 v-if="cardsToggle[6][1]" :greet="currentGreet" :bgImg='currentBgImg'></card61>
   <div class="foot-wrap">
     <div class="foot-options">
       <div class="icon-wrap" @click="modiText">
         <p class="option-icon font"></p>
         <p class="option-text">改文字</p>
       </div>
-      <div class="icon-wrap">
+      <div class="icon-wrap" @click="modiBg">
         <p class="option-icon picture"></p>
-        <p class="option-text">换图片</p>
+        <p class="option-text">换背景</p>
       </div>
       <div class="icon-wrap" @click="changeMusic">
         <p class="option-icon music"></p>
